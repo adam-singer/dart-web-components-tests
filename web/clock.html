@@ -2,7 +2,7 @@
   <element name="x-clock" constructor="Clock" extends="div">
     <template>
       <div>
-        <span>!!! The foo is {{ time }}</span>
+        <span>The current time is {{ time }}</span>
       </div>
     </template>
     <script type="application/dart">
@@ -15,7 +15,6 @@
         
         inserted() {
           new Timer.repeating(1000, (t) {
-            //print("timer");
             time = new Date.now();
             watchers.dispatch();
           });
