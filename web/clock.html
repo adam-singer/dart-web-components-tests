@@ -1,0 +1,30 @@
+<html><body>
+  <element name="x-clock" constructor="Clock" extends="div">
+    <template>
+      <div>
+        <span>!!! The foo is {{ time }}</span>
+      </div>
+    </template>
+    <script type="application/dart">
+      import 'package:web_components/web_component.dart';
+      import 'package:web_components/watcher.dart' as watchers;
+      import 'dart:isolate';
+
+      class Clock extends WebComponent {
+        Date time = new Date.now();
+        
+        inserted() {
+          new Timer.repeating(1000, (t) {
+            //print("timer");
+            time = new Date.now();
+            watchers.dispatch();
+          });
+        }
+        
+        removed() {
+          print("removed, stop the timer?");
+        }
+      }
+    </script>
+  </element>
+</body></html>
