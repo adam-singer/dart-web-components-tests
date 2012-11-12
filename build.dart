@@ -6,5 +6,6 @@ void main() {
                                   'web/HelloWorld.html',
                                   'web/FormBinding.html',
                                   'web/ComplexObjectBinding.html',
-                                  'web/Conditional.html']);
+                                  'web/Conditional.html',
+                                  'web/Iterate.html']);
 }

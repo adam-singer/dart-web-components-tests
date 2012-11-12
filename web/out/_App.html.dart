@@ -49,7 +49,9 @@ final String _INITIAL_PAGE = '''
     <h1>Web Components FTW!</h1>
     
     
-    <x-clock id="__e-0"></x-clock>
+    <x-clock id="__e-0">
+      <span>So cool!</span>
+    </x-clock>
     
     
     <script src="../dart.js"></script>

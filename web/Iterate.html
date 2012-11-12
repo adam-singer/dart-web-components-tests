@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>App</title>
+    <link rel="stylesheet" href="App.css">
+  </head>
+  <body>
+    <h1>Hello MDV: Iteration</h1>
+    
+    <h2>Language features</h2>
+    
+    <h3>Dart</h3>
+      
+    <ul>
+      <template iterate="feature in features">
+        <li><input type="checkbox" value="{{ feature }}" data-action="click:addToFavorites"> <span>{{ feature }}</span></li>
+      </template>
+    </ul>
+    
+    <h3>Your favorite features</h3>
+    
+    <ul>
+      <template iterate="fav in userFavorites">
+        <li><span>{{ fav }}</span></li>
+      </template>
+    </ul>
+    
+    <script type="application/dart" src="Iterate.dart"></script>
+    <script src="dart.js"></script>
+  </body>
+</html>

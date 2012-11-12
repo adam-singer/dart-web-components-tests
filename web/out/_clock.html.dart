@@ -57,16 +57,17 @@ class Clock extends WebComponent {
   /** Original code from the component. */
   
   Date time = new Date.now();
+  Timer timer;
   
   inserted() {
-    new Timer.repeating(1000, (t) {
+    timer = new Timer.repeating(1000, (t) {
       time = new Date.now();
       watchers.dispatch();
     });
   }
   
   removed() {
-    print("removed, stop the timer?");
+    timer.cancel();
   }
 }
 

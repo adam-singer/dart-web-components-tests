@@ -9,28 +9,28 @@
   <body>
     <h1>Hello MDV: Conditionals</h1>
     
-    <h1>Classes in Code</h1>
+    <h2>Classes in Code</h2>
     
     <div>
-      <h2>Dart</h2>
+      <h3>Dart</h3>
       
       <code><pre>
-      class Person {
-        String firstName;
-        String lastName;
-        Person(this.firstName, this.lastName);
-      }
+class Person {
+  String firstName;
+  String lastName;
+  Person(this.firstName, this.lastName);
+}
       </pre></code>
     </div>
     
     <select name="language" data-action="change:chooseExample">
-    <option value="js">JavaScript</option>
-    <option value="java">Java</option>
+	    <option value="js">JavaScript</option>
+	    <option value="java">Java</option>
     </select>
     
     <template instantiate="if langChoice != null">
     <div>
-      <h2>{{ langChoice }}</h2>
+      <h3>{{ langChoice }}</h3>
       
       <code><pre>
 {{ example }}
