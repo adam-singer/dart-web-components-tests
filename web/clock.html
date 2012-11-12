@@ -14,7 +14,7 @@
         Date time = new Date.now();
         
         inserted() {
-          new Timer.repeating(1000, (t) {
+          new Timer.repeating(1000, (t) { 
             time = new Date.now();
             watchers.dispatch();
           });

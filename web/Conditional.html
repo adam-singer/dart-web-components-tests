@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>App</title>
+    <link rel="stylesheet" href="App.css">
+  </head>
+  <body>
+    <h1>Hello MDV: Conditionals</h1>
+    
+    <h1>Classes in Code</h1>
+    
+    <div>
+      <h2>Dart</h2>
+      
+      <code><pre>
+      class Person {
+        String firstName;
+        String lastName;
+        Person(this.firstName, this.lastName);
+      }
+      </pre></code>
+    </div>
+    
+    <select name="language" data-action="change:chooseExample">
+    <option value="js">JavaScript</option>
+    <option value="java">Java</option>
+    </select>
+    
+    <template instantiate="if langChoice != null">
+    <div>
+      <h2>{{ langChoice }}</h2>
+      
+      <code><pre>
+{{ example }}
+      </pre></code>
+    </div>
+    </template>
+    
+    <script type="application/dart" src="Conditional.dart"></script>
+    <script src="dart.js"></script>
+  </body>
+</html>

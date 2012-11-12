@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>App</title>
+    <link rel="stylesheet" href="App.css">
+  </head>
+  <body>
+    <h1>Hello MDV: Form Binding</h1>
+    
+    <p>MDV is {{ superlative }}</p>
+    
+    <div>
+      <input type="text" data-bind="value:superlative" placeholder="Enter superlative">
+    </div>
+    
+    <button id="change-it" data-action="click:changeIt">Change</button>
+    
+    <script type="application/dart" src="FormBinding.dart"></script>
+    <script src="dart.js"></script>
+  </body>
+</html>
