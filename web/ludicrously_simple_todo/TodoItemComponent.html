@@ -3,7 +3,7 @@
     <element name="x-todo-item" constructor="TodoItemComponent" extends="div">
       <template>
         <label class="{{ completeClass }}">
-          <input type="checkbox" data-action="checked:toggle">
+          <input type="checkbox" data-action="change:toggle">
           <span>{{ todo.actionItem }}</span>
         </label>
       </template>
