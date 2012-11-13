@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>LudicrouslySimpleTodo</title>
     <link rel="stylesheet" href="LudicrouslySimpleTodo.css">
-    <link rel="component" href="TodoItemComponent.html">
+    <link rel="components" href="TodoItemComponent.html">
   </head>
   <body>
     <h1>LudicrouslySimpleTodo</h1>
@@ -14,8 +14,8 @@
     <button data-action="click:createNewTodo">Create New Todo</button>
     
     <ul id="todos">
-      <template iterate="todo in todoItems">
-        <li><x-todo-item data-value="todo:todo"></x-todo-item></li>
+      <template iterate="x in todoItems">
+        <li><x-todo-item data-value="todo:x"></x-todo-item></li>
       </template>
     </ul>
 

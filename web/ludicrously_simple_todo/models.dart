@@ -1,4 +1,4 @@
-library todo_item;
+library models;
 
 class TodoItem {
   String actionItem;

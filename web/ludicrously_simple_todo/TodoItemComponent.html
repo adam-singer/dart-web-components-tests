@@ -1,14 +1,13 @@
 <html>
   <body>
-    <element name="x-todo" constructor="TodoItemComponent" extends="div">
+    <element name="x-todo-item" constructor="TodoItemComponent" extends="div">
       <template>
         <label class="{{ completeClass }}">
           <input type="checkbox" data-action="checked:toggle">
           <span>{{ todo.actionItem }}</span>
         </label>
       </template>
-    </element>  
-    
-    <script type="application/dart" src="TodoItemComponent.dart"></script>
+      <script type="application/dart" src="TodoItemComponent.dart"></script>
+    </element>
   </body>
 </html>
