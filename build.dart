@@ -7,5 +7,6 @@ void main() {
                                   'web/FormBinding.html',
                                   'web/ComplexObjectBinding.html',
                                   'web/Conditional.html',
-                                  'web/Iterate.html']);
+                                  'web/Iterate.html',
+                                  'web/ludicrously_simple_todo/LudicrouslySimpleTodo.html']);
 }
