@@ -1,6 +1,7 @@
 <html>
   <body>
-    <element name="x-todo-item" constructor="TodoItemComponent" extends="div">
+    <element name="x-todo-item" constructor="TodoItemComponent"
+             apply-author-styles="" extends="div">
       <template>
         <label class="{{ completeClass }}">
           <input type="checkbox" data-action="change:toggle">
