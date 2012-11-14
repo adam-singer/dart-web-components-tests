@@ -1,12 +1,11 @@
 import 'dart:math';
 
-String superlative;
+String superlative = 'awesome';
 
-List<String> alternatives = const ['wicked cool', 'sweet', 'fantastic'];
+List<String> alternatives = const <String>['wicked cool', 'sweet', 'fantastic'];
+
 Random random = new Random();
 
 changeIt(e) => superlative = alternatives[random.nextInt(3)];
 
-main() {
-  superlative = 'awesome';
-}
+main() { }
