@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>App</title>
+    <link rel="stylesheet" href="App.css">
+  </head>
+  <body>
+    <h1>Calling method on custom element</h1>
+    
+    <x-hello>Bob</x-hello>
+    
+    <x-code-sample title="For loops">
+      for (final i = 0; i < 5; i++) {
+        print(i);
+      }
+    </x-code-sample>
+
+    <element name="x-hello" extends="div">
+      <template>
+        <div>Hello, <content></content></div>
+      </template>
+    </element>
+    
+    <element name="x-code-sample" extends="div">
+      <template>
+        <h2>{{ attributes['title'] }}</h2>
+        <code><pre><content></content></pre></code>
+      </template>
+    </element>
+    
+    <script type="application/dart">
+    main() { }
+    </script>
+    
+    <script src="dart.js"></script>
+  </body>
+</html>

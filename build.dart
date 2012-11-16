@@ -8,5 +8,7 @@ void main() {
                                   'web/ComplexObjectBinding.html',
                                   'web/Conditional.html',
                                   'web/Iterate.html',
-                                  'web/ludicrously_simple_todo/LudicrouslySimpleTodo.html']);
+                                  'web/ludicrously_simple_todo/LudicrouslySimpleTodo.html',
+                                  'web/CallMethodOnCustomElement.html',
+                                  'web/ContentTag.html']);
 }

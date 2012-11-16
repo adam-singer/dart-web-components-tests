@@ -15,6 +15,40 @@
       <input type="text" data-bind="value:superlative" placeholder="Enter superlative">
     </div>
     
+    <div>
+      <textarea rows="4" cols="50" data-bind="value:superlative"></textarea>
+    </div>
+    
+    <div>
+      <select data-bind="value:superlative">
+      <option>Wicked Cool</option>
+      <option>Sweet</option>
+      </select>
+    </div>
+    
+    <div>
+      <p>
+      The following doesn't work yet, need value binding for radio buttons.
+      </p>
+      
+      <label><input type="radio" name="superlative" value="Sweet" data-bind="value:superlative">Sweet</label>
+      <label><input type="radio" name="superlative" value="Wicked Cool" data-bind="value:superlative">Wicked Cool</label>
+    </div>
+    
+    <div>
+      <p>
+      The following doesn't work yet, need to treat check boxes as a list.
+      </p>
+      
+      <label><input type="checkbox" name="superlatives" value="Sweet">Sweet</label>
+      <label><input type="checkbox" name="superlatives" value="Wicked Cool">Wicked Cool</label>
+    </div>
+    
+    <div>
+      
+      <input type="date" name="birthday" data-bind="value:superlative">
+    </div>
+    
     <script type="application/dart" src="FormBinding.dart"></script>
     <script src="dart.js"></script>
   </body>

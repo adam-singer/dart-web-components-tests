@@ -15,7 +15,13 @@
       
     <ul>
       <template iterate="feature in features">
-        <li><input type="checkbox" value="{{ feature }}" data-action="click:addToFavorites"> <span>{{ feature }}</span></li>
+        <li>
+          <label>
+            <input type="checkbox" value="{{ feature }}"
+                   data-action="click:addToFavorites">
+            <span>{{ feature }}</span>
+          </label>
+        </li>
       </template>
     </ul>
     
