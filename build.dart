@@ -10,5 +10,6 @@ void main() {
                                   'web/Iterate.html',
                                   'web/ludicrously_simple_todo/LudicrouslySimpleTodo.html',
                                   'web/CallMethodOnCustomElement.html',
-                                  'web/ContentTag.html']);
+                                  'web/ContentTag.html',
+                                  'web/simple_conditional.html']);
 }

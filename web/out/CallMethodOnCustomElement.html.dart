@@ -13,8 +13,10 @@ import 'CallMethodOnCustomElement.html_x_fancy.dart';
 
 // Original code
 main() {
-      var fancy = query('x-fancy');
-      fancy.beFancy();
+      window.setTimeout(() {
+        var fancy = query('x-fancy').xtag;
+        fancy.beFancy();
+      }, 1000);
     }
     
 

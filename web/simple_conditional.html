@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Conditional</title>
+    <link rel="stylesheet" href="App.css">
+  </head>
+  <body>
+    <h1>Simple Conditional with Data Binding</h1>
+    
+    <p>
+      <label>
+        <input type="checkbox" id="accept-license" data-bind="checked:acceptLicense">
+        I accept the license
+      </label>
+    </p>
+    
+    <template instantiate="if acceptLicense">
+      <h2>Thanks!</h2>
+      <p>We'll send the activation key to your email.</p>
+    </template>
+
+    <script type="application/dart">
+      bool acceptLicense = false;
+      main() { }
+    </script>
+    <script src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+  </body>
+</html>

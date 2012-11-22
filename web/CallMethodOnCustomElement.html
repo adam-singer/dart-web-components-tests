@@ -28,8 +28,10 @@
     <script type="application/dart">
     import 'dart:html';
     main() {
-      var fancy = query('x-fancy');
-      fancy.beFancy();
+      window.setTimeout(() {
+        var fancy = query('x-fancy').xtag;
+        fancy.beFancy();
+      }, 1000);
     }
     </script>
     
