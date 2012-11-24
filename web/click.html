@@ -1,18 +1,18 @@
-<html><body>
-  <element name="x-click-counter" constructor="CounterComponent" extends="div">
-    <template>
-      <div>
-        <button data-action="click:increment">Click me</button>
-        <span>(click count: {{count}})</span>
-      </div>
-    </template>
-    <script type="application/dart">
-      import 'package:web_components/web_component.dart';
-
-      class CounterComponent extends WebComponent {
-        int count = 0;
-        void increment(e) { count++; }
-      }
-    </script>
-  </element>
-</body></html>
+<!DOCTYPE html>  
+   
+ <html>  
+  <head>  
+   <meta charset="utf-8">  
+   <title>App</title>
+   <link rel="stylesheet" href="App.css">
+   <link rel="components" href="click_component.html">  
+  </head>  
+  <body>  
+   <h1>Web Components FTW!</h1>  
+     
+   <x-click-counter></x-click-counter>  
+     
+   <script type="application/dart">main() {}</script>  
+   <script src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>  
+  </body>  
+ </html> 
