@@ -21,16 +21,17 @@ List<String> features = const <String>['lexical scope',
                                         'map and list literals',
                                         'generics'];
 
-List<String> userFavorites = new List<String>();  // TODO use a Set when it can be watched
+// TODO try a Set when it can be watched
+List<String> userFavorites = new List<String>();
 
 addToFavorites(Event e) {
   InputElement checkbox = e.target;
-  String fav = checkbox.value;
-  int index = userFavorites.indexOf(fav);
+  var fav = checkbox.value;
   
-  if (checkbox.checked && index < 0) {
+  if (checkbox.checked) {
     userFavorites.add(fav);
-  } else if (!checkbox.checked && index >= 0) {
+  } else if (!checkbox.checked) {
+    var index = userFavorites.indexOf(fav);
     userFavorites.removeAt(index);
   }
   
