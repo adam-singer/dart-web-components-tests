@@ -4,6 +4,7 @@ file:///Users/sethladd/Downloads/dart/dart-sdk/lib/_internal/compiler/implementa
 file:///Users/sethladd/Downloads/dart/dart-sdk/lib/_internal/compiler/implementation/lib/isolate_patch.dart
 file:///Users/sethladd/Downloads/dart/dart-sdk/lib/_internal/compiler/implementation/lib/js_array.dart
 file:///Users/sethladd/Downloads/dart/dart-sdk/lib/_internal/compiler/implementation/lib/js_helper.dart
+file:///Users/sethladd/Downloads/dart/dart-sdk/lib/_internal/compiler/implementation/lib/js_number.dart
 file:///Users/sethladd/Downloads/dart/dart-sdk/lib/_internal/compiler/implementation/lib/js_string.dart
 file:///Users/sethladd/Downloads/dart/dart-sdk/lib/_internal/compiler/implementation/lib/math_patch.dart
 file:///Users/sethladd/Downloads/dart/dart-sdk/lib/_internal/compiler/implementation/lib/mirror_opt_in_message.dart

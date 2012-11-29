@@ -18,7 +18,7 @@
         <li>
           <label>
             <input type="checkbox" value="{{ feature }}"
-                   data-action="click:addToFavorites">
+                   on-click="addToFavorites($event)">
             <span>{{ feature }}</span>
           </label>
         </li>
@@ -34,6 +34,6 @@
     </ul>
     
     <script type="application/dart" src="Iterate.dart"></script>
-    <script src="dart.js"></script>
+    <script type="text/javascript" src="dart.js"></script>
   </body>
 </html>

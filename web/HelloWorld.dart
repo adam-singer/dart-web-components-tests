@@ -6,6 +6,6 @@ List<String> alternatives = const <String>['wicked cool', 'sweet', 'fantastic'];
 
 Random random = new Random();
 
-changeIt(e) => superlative = alternatives[random.nextInt(3)];
+changeIt() => superlative = alternatives[random.nextInt(3)];
 
 main() { }

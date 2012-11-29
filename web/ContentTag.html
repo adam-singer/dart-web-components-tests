@@ -11,8 +11,10 @@
     
     <x-hello>Bob</x-hello>
     
+    <!-- Waiting for fix on https://github.com/dart-lang/html5lib/issues/47
+         to use CDATA -->
     <x-code-sample title="For loops">
-      for (final i = 0; i < 5; i++) {
+      for (final i = 0; i &lt; 5; i++) {
         print(i);
       }
     </x-code-sample>
@@ -34,6 +36,6 @@
     main() { }
     </script>
     
-    <script src="dart.js"></script>
+    <script type="text/javascript" src="dart.js"></script>
   </body>
 </html>

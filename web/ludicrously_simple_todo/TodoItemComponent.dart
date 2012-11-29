@@ -4,7 +4,7 @@ import 'models.dart';
 class TodoItemComponent extends WebComponent {
   TodoItem todo;
   
-  toggle(e) => todo.toggle();
+  toggle() => todo.toggle();
   
   String get completeClass => todo.complete ? 'completed' : '';
 }

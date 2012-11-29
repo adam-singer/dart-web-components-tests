@@ -11,7 +11,7 @@
     <h1>LudicrouslySimpleTodo</h1>
     
     <input type="text" id="new-todo">
-    <button data-action="click:createNewTodo">Create New Todo</button>
+    <button on-click="createNewTodo()">Create New Todo</button>
     
     <ul id="todos">
       <template iterate="x in todoItems">
@@ -20,6 +20,6 @@
     </ul>
 
     <script type="application/dart" src="LudicrouslySimpleTodo.dart"></script>
-    <script src="dart.js"></script>
+    <script type="text/javascript" src="dart.js"></script>
   </body>
 </html>
