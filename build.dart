@@ -12,5 +12,6 @@ void main() {
                                   'web/CallMethodOnCustomElement.html',
                                   'web/ContentTag.html',
                                   'web/simple_conditional.html',
-                                  'web/click.html']);
+                                  'web/click.html',
+                                  'web/login_page.html']);
 }

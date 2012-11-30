@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html><body>
+<element name="x-login" constructor="LoginComponent" extends="div">
+<template >
+    <form id='loginForm' on-submit='doLogin($event)'>
+        <div>
+            <h1>Login :</h1>
+            <label for="loginName">Login name</label>
+            <input type="text" required="required" data-bind="value:loginId" />
+            <label>Password</label>
+            <input type="password" required="required" data-bind="value:pwd" />
+            <input type='submit' value="Login" />
+            <input type='button' on-click="doCancel($event)" value="Cancel" />               
+            <span>{{errorMessage}}</span>
+        </div>
+    </form>      
+</template>
+
+<script type="application/dart">
+  import 'package:web_components/web_components.dart'; 
+  import 'dart:html';
+
+  class LoginComponent extends WebComponent {
+   String errorMessage=""; 
+   String loginId='';
+   String pwd=''; 
+
+    void doLogin(Event e) {
+      print("in do login");
+      e.preventDefault();          
+      print(loginId);
+      print(pwd);
+    }  
+
+    void doCancel(Event e) {
+      e.preventDefault();
+      errorMessage=' ';         
+      style.display='none';
+    }                       
+  }          
+</script>
+</element>
+</body></html>
