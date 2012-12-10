@@ -23,12 +23,13 @@ class Person {
       </pre></code>
     </div>
     
-    <select name="language" on-change="chooseExample">
+    <select name="language" on-change="chooseExample($event)">
+      <option value="">-- Choose one --</option>
 	    <option value="js">JavaScript</option>
 	    <option value="java">Java</option>
     </select>
     
-    <template instantiate="if langChoice != null">
+    <template if="langChoice != null && !langChoice.isEmpty">
 	    <div>
 	      <h3>{{ langChoice }}</h3>
 	      
