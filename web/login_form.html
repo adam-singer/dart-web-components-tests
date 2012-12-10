@@ -6,9 +6,9 @@
         <div>
             <h1>Login :</h1>
             <label for="loginName">Login name</label>
-            <input type="text" required="required" data-bind="value:loginId" />
+            <input type="text" required="required" bind-value="loginId" />
             <label>Password</label>
-            <input type="password" required="required" data-bind="value:pwd" />
+            <input type="password" required="required" bind-value="pwd" />
             <input type='submit' value="Login" />
             <input type='button' on-click="doCancel($event)" value="Cancel" />               
             <span>{{errorMessage}}</span>
@@ -17,7 +17,7 @@
 </template>
 
 <script type="application/dart">
-  import 'package:web_components/web_components.dart'; 
+  import 'package:web_ui/web_ui.dart'; 
   import 'dart:html';
 
   class LoginComponent extends WebComponent {
