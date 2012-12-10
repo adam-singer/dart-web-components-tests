@@ -29,13 +29,11 @@ class Person {
 	    <option value="java">Java</option>
     </select>
     
-    <template if="langChoice != null && !langChoice.isEmpty">
-	    <div>
-	      <h3>{{ langChoice }}</h3>
-	      
-	      <code><pre>{{ example }}</pre></code>
-	    </div>
-    </template>
+    <div template if="langChoice != null && !langChoice.isEmpty">
+      <h3>{{ langChoice }}</h3>
+      
+      <code><pre>{{ example }}</pre></code>
+    </div>
     
     <script type="application/dart" src="Conditional.dart"></script>
     <script type="text/javascript" src="dart.js"></script>
