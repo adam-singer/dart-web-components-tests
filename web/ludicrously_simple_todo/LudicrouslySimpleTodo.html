@@ -8,18 +8,27 @@
     <link rel="components" href="TodoItemComponent.html">
   </head>
   <body>
-    <h1>LudicrouslySimpleTodo</h1>
+    <h1>Simple TODO</h1>
     
     <input type="text" id="new-todo">
-    <button on-click="createNewTodo()">Create New Todo</button>
+    <button on-click="createNewTodo()">
+      Create New Todo
+    </button>
     
     <ul id="todos">
-      <template iterate="x in todoItems">
-        <li><x-todo-item bind-todo="x"></x-todo-item></li>
-      </template>
+      <li template iterate="todo in todoItems">
+        <x-todo-item bind-todo="todo"></x-todo-item>
+      </li>
     </ul>
 
     <script type="application/dart" src="LudicrouslySimpleTodo.dart"></script>
     <script type="text/javascript" src="dart.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
