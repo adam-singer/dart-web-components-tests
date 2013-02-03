@@ -7,11 +7,17 @@
     <link rel="components" href="login_form.html">
   </head>
   <body>
-    <h1>login_page</h1>
+    
+    <!-- TODO replace with scoped style sheet when ready -->
+    <style>
+      label {
+        display:inline-block;
+        width:100px;
+      }
+    </style>
     
     <x-login></x-login>
 
-    <script type="application/dart">main() {}</script>
-    <script type="text/javascript" src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+    <script type="text/javascript" src="packages/browser/dart.js"></script>
   </body>
 </html>

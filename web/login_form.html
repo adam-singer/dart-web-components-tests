@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html><body>
 <element name="x-login" constructor="LoginComponent" extends="div">
+
 <template >
     <form id='loginForm' on-submit='doLogin($event)'>
-        <div>
-            <h1>Login :</h1>
-            <label for="loginName">Login name</label>
-            <input type="text" required="required" bind-value="loginId" />
-            <label>Password</label>
-            <input type="password" required="required" bind-value="pwd" />
-            <input type='submit' value="Login" />
-            <input type='button' on-click="doCancel($event)" value="Cancel" />               
-            <span>{{errorMessage}}</span>
-        </div>
+      <h1>Login :</h1>
+      <div>
+      <label for="loginName">Login name:</label>
+      <input type="text" required="required" bind-value="loginId">
+      </div>
+      
+      <div>
+      <label>Password:</label>
+      <input type="password" required="required" bind-value="pwd">
+      </div>
+      
+      <div>
+      <input type='submit' value="Login">
+      <input type='button' on-click="doCancel($event)" value="Cancel">  
+      </div>             
+      <span>{{errorMessage}}</span>
     </form>      
 </template>
 
@@ -26,7 +33,6 @@
    String pwd=''; 
 
     void doLogin(Event e) {
-      print("in do login");
       e.preventDefault();          
       print(loginId);
       print(pwd);

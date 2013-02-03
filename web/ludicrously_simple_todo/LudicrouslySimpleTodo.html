@@ -11,18 +11,19 @@
     <h1>Simple TODO</h1>
     
     <input type="text" id="new-todo">
+    
     <button on-click="createNewTodo()">
       Create New Todo
     </button>
     
-    <ul id="todos">
-      <li template iterate="todo in todoItems">
+    <ul id="todos" iterate="todo in todoItems">
+      <li>
         <x-todo-item bind-todo="todo"></x-todo-item>
       </li>
     </ul>
 
     <script type="application/dart" src="LudicrouslySimpleTodo.dart"></script>
-    <script type="text/javascript" src="dart.js"></script>
+    <script type="text/javascript" src="packages/browser/dart.js"></script>
   </body>
 </html>
 

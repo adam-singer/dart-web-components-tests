@@ -9,32 +9,25 @@
   <body>
     <h1>Calling method on custom element</h1>
     
-    <x-fancy></x-fancy>
+    <div is="x-fancy"></div>
 
     <element name="x-fancy" extends="div">
       <template>
-        <div>This is fancy</div>
+        This is fancy!
       </template>
       <script type="application/dart">
       import 'package:web_ui/web_ui.dart';
       class Fancy extends WebComponent {
         beFancy() {
-          print("wear a bow tie");
+          appendText("So wear a bow tie");
         }
       }
       </script>
     </element>
     
-    <script type="application/dart">
-    import 'dart:html';
-    main() {
-      window.setTimeout(() {
-        var fancy = query('x-fancy').xtag;
-        fancy.beFancy();
-      }, 1000);
-    }
-    </script>
+    <button on-click="query('div[is=x-fancy]').xtag.beFancy()">Class it up</button>
     
-    <script type="text/javascript" src="dart.js"></script>
+    <script type="application/dart">import 'dart:html'; main() {}</script>
+    <script type="text/javascript" src="packages/browser/dart.js"></script>
   </body>
 </html>

@@ -23,7 +23,8 @@ class Person {
       </pre></code>
     </div>
     
-    <select name="language" on-change="chooseExample($event)">
+    <!--<select name="language" on-change="chooseExample($event)">-->
+    <select name="language" bind-value="langChoice">
       <option value="">-- Choose one --</option>
 	    <option value="js">JavaScript</option>
 	    <option value="java">Java</option>
@@ -32,10 +33,10 @@ class Person {
     <div template if="langChoice != null && !langChoice.isEmpty">
       <h3>{{ langChoice }}</h3>
       
-      <code><pre>{{ example }}</pre></code>
+      <code><pre>{{ languageExamples[langChoice] }}</pre></code>
     </div>
     
     <script type="application/dart" src="Conditional.dart"></script>
-    <script type="text/javascript" src="dart.js"></script>
+    <script type="text/javascript" src="packages/browser/dart.js"></script>
   </body>
 </html>

@@ -13,27 +13,25 @@
     
     <h3>Dart</h3>
       
-    <ul>
-      <template iterate="feature in features">
-        <li>
-          <label>
-            <input type="checkbox" value="{{ feature }}"
-                   on-click="addToFavorites($event)">
-            <span>{{ feature }}</span>
-          </label>
-        </li>
-      </template>
+    <ul iterate="feature in features">
+      <li>
+        <label>
+          <input type="checkbox" value="{{ feature }}"
+                 on-click="addToFavorites($event)">
+          {{ feature }}
+        </label>
+      </li>
     </ul>
     
     <h3>Your favorite features</h3>
     
-    <ul>
-      <template iterate="fav in userFavorites">
-        <li><span>{{ fav }}</span></li>
-      </template>
+    <ul iterate="fav in userFavorites">
+      <li>
+        {{ fav }}
+      </li>
     </ul>
     
     <script type="application/dart" src="Iterate.dart"></script>
-    <script type="text/javascript" src="dart.js"></script>
+    <script type="text/javascript" src="packages/browser/dart.js"></script>
   </body>
 </html>

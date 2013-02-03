@@ -33,12 +33,7 @@ public class Person {
 
 };
 
-String langChoice;
+String langChoice = '';
 String example;
-
-chooseExample(Event e) {
-  langChoice = e.target.value;  // TODO: remove when select gets data-bind
-  example = languageExamples[langChoice];
-}
 
 main() { }
