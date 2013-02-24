@@ -16,7 +16,7 @@
       Create New Todo
     </button>
     
-    <ul id="todos" iterate="todo in todoItems">
+    <ul id="todos" template iterate="todo in todoItems">
       <li>
         <x-todo-item bind-todo="todo"></x-todo-item>
       </li>

@@ -1,5 +1,6 @@
 library models;
 
+@observable
 class TodoItem {
   String actionItem;
   bool complete = false;

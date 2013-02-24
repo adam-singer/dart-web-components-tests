@@ -1,7 +1,8 @@
 import 'models.dart';
 import 'dart:html';
+import 'package:web_ui/web_ui.dart';
 
-List<TodoItem> todoItems = new List<TodoItem>();
+List<TodoItem> todoItems = toObservable(new List<TodoItem>());
 
 createNewTodo() {
   var newTodo = query('#new-todo') as InputElement;
