@@ -1,3 +1,6 @@
+import 'package:web_ui/web_ui.dart';
+
+@observable
 class Person {
   String firstName;
   String lastName;
@@ -5,6 +8,7 @@ class Person {
   Person(this.firstName, this.lastName, this.address);
 }
 
+@observable
 class Address {
   String street;
   String city;

@@ -1,11 +1,13 @@
-import 'dart:math';
+library hello_world;
 
+import 'package:web_ui/web_ui.dart';
+
+@observable
 String superlative = 'awesome';
+int i = 0;
 
 List<String> alternatives = const <String>['wicked cool', 'sweet', 'fantastic'];
 
-Random random = new Random();
-
-changeIt() => superlative = alternatives[random.nextInt(3)];
+changeIt() => superlative = alternatives[i++ % 3];
 
 main() { }

@@ -13,7 +13,7 @@
     
     <h3>Dart</h3>
       
-    <ul iterate="feature in features">
+    <ul template iterate="feature in features">
       <li>
         <label>
           <input type="checkbox" value="{{ feature }}"
@@ -25,7 +25,7 @@
     
     <h3>Your favorite features</h3>
     
-    <ul iterate="fav in userFavorites">
+    <ul template iterate="fav in userFavorites">
       <li>
         {{ fav }}
       </li>

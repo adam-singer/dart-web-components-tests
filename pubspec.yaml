@@ -1,5 +1,6 @@
-name:  App
-description:  A sample application
+name:  web_ui_tests
+description:  Small samples and tests with Web UI.
 
 dependencies:
   web_ui: any
+  browser: any

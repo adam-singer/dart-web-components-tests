@@ -8,18 +8,16 @@
     </template>
     <script type="application/dart">
       import 'package:web_ui/web_ui.dart';
-      import 'package:web_ui/watcher.dart' as watchers;
-      import 'dart:isolate';
       import 'dart:async';
 
       class Clock extends WebComponent {
-        Date time = new Date.now();
+        @observable
+        DateTime time = new DateTime.now();
         Timer timer;
         
         inserted() {
-          timer = new Timer.repeating(1000, (t) {
-            time = new Date.now();
-            watchers.dispatch();
+          timer = new Timer.repeating(new Duration(seconds:1), (_) {
+            time = new DateTime.now();
           });
         }
         
