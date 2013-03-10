@@ -1,3 +1,5 @@
+library complex_object_binding;
+
 import 'package:web_ui/web_ui.dart';
 
 @observable

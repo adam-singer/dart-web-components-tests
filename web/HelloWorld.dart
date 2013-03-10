@@ -6,8 +6,8 @@ import 'package:web_ui/web_ui.dart';
 String superlative = 'awesome';
 int i = 0;
 
-List<String> alternatives = const <String>['wicked cool', 'sweet', 'fantastic'];
+List<String> alternatives = const <String>['wicked cool', 'sweet', 'fantastic', 'wonderful'];
 
-changeIt() => superlative = alternatives[i++ % 3];
+changeIt() => superlative = alternatives[i++ % alternatives.length];
 
 main() { }

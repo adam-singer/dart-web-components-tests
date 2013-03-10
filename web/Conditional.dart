@@ -1,6 +1,6 @@
 import 'dart:html';
 
-Map<String, String> languageExamples = <String, String>{
+Map languageExamples = {
   'js': '''
 function Person(firstName, lastName) {
   this.firstName;

@@ -13,5 +13,6 @@ void main() {
                                   'web/CallMethodOnCustomElement.html',
                                   'web/ContentTag.html',
                                   'web/click.html',
-                                  'web/login_page.html']);
+                                  'web/login_page.html',
+                                  'web/component_with_attribute.html']);
 }
