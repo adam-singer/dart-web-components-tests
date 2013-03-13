@@ -1,4 +1,5 @@
 import 'dart:html';
+import 'package:web_ui/web_ui.dart';
 
 List<String> features = const <String>['lexical scope',
                                         'closures',
@@ -12,7 +13,7 @@ List<String> features = const <String>['lexical scope',
                                         'generics'];
 
 // TODO try a Set when it can be watched
-List<String> userFavorites = new List<String>();
+List<String> userFavorites = toObservable(new List<String>());
 
 addToFavorites(Event e) {
   InputElement checkbox = e.target;

@@ -7,8 +7,6 @@ class TodoItem {
   String actionItem;
   bool complete = false;
   
-  foo(
-  
   TodoItem(this.actionItem);
   
   toggle() => complete = !complete;

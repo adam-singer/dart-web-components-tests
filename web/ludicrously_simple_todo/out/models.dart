@@ -35,9 +35,7 @@ class TodoItem  implements Observable{
     __$complete = value;
   }
   
-  foo(
-  
-  TodoItem(this.actionItem);
+  TodoItem(actionItem) : __$actionItem = actionItem;
   
   toggle() => complete = !complete;
 final int hashCode = ++__observe.Observable.$_nextHashCode;
