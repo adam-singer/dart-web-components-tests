@@ -2,7 +2,7 @@ import 'dart:html';
 
 Map languageExamples = {
   'js': '''
-function Person(firstName, lastName) {
+function PersonFoo(firstName, lastName) {
   this.firstName;
   this.lastName;
 };
