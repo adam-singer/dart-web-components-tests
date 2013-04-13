@@ -1,8 +1,13 @@
 import 'package:web_ui/component_build.dart';
 import 'dart:io';
+import 'dart:async';
 
 void main() {
-  build(new Options().arguments, ['web/clock_page.html',
+  var args = new List.from(new Options().arguments);
+  args.addAll(['--', '--no-rewrite-urls']);
+  
+  Future dwc = build(args, [
+                                  'web/clock_page.html',
                                   'web/HelloWorld.html',
                                   'web/simple_conditional.html',
                                   'web/ludicrously_simple_todo/LudicrouslySimpleTodo.html',
@@ -19,4 +24,8 @@ void main() {
                                   'web/observable_list.html',
                                   'web/manual_watching.html',
                                   'web/observe_nested.html']);
+  
+  dwc
+    .then((_) => Process.run('cp', ['packages/browser/dart.js', 'web/out/dart.js']))
+    .then((_) => Process.run('cp', ['App.css', 'out']));
 }

@@ -2,17 +2,18 @@
 
 <html>
   <head>
+    <meta charset="utf-8">
     <title>observe_nested</title>
+    <link rel="stylesheet" href="App.css">
   </head>
  
   <body>
+
     <p>
-      <div>
-        Name: <input type="text" bind-value="person.name">
-      </div>
-      <div>
-        City: <input type="text" bind-value="person.address.city">
-      </div>
+      Name: <input type="text" bind-value="person.name">
+    </p>
+    <p>
+      City: <input type="text" bind-value="person.address.city">
     </p>
     
     <p>Person's name: {{ person.name }}</p>
@@ -20,6 +21,6 @@
     
     <script type="application/dart" src="observe_nested.dart"></script>
     <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
-    <script src="packages/browser/dart.js"></script>
+    <script src="dart.js"></script>
   </body>
 </html>
