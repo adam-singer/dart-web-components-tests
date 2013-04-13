@@ -14,5 +14,9 @@ void main() {
                                   'web/ContentTag.html',
                                   'web/click.html',
                                   'web/login_page.html',
-                                  'web/component_with_attribute.html']);
+                                  'web/component_with_attribute.html',
+                                  'web/observe_object.html',
+                                  'web/observable_list.html',
+                                  'web/manual_watching.html',
+                                  'web/observe_nested.html']);
 }

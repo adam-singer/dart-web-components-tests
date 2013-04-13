@@ -5,7 +5,7 @@ import 'package:web_ui/observe/observable.dart' as __observe;
 
 
 @observable
-class Person  implements Observable{
+class Person  extends Observable {
   String __$firstName;
   String get firstName {
     if (__observe.observeReads) {
@@ -49,13 +49,10 @@ class Person  implements Observable{
     __$address = value;
   }
   Person(firstName, lastName, address) : __$firstName = firstName, __$lastName = lastName, __$address = address;
-final int hashCode = ++__observe.Observable.$_nextHashCode;
-  var $_observers;
-  List $_changes;
-  }
+}
 
 @observable
-class Address  implements Observable{
+class Address  extends Observable {
   String __$street;
   String get street {
     if (__observe.observeReads) {
@@ -99,10 +96,7 @@ class Address  implements Observable{
     __$postalCode = value;
   }
   Address(street, city, postalCode) : __$street = street, __$city = city, __$postalCode = postalCode;
-final int hashCode = ++__observe.Observable.$_nextHashCode;
-  var $_observers;
-  List $_changes;
-  }
+}
 
 Person person;
 

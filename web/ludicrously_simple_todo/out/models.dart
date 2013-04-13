@@ -5,7 +5,7 @@ import 'package:web_ui/observe/observable.dart' as __observe;
 
 
 @observable
-class TodoItem  implements Observable{
+class TodoItem  extends Observable {
   String __$actionItem;
   String get actionItem {
     if (__observe.observeReads) {
@@ -38,9 +38,6 @@ class TodoItem  implements Observable{
   TodoItem(actionItem) : __$actionItem = actionItem;
   
   toggle() => complete = !complete;
-final int hashCode = ++__observe.Observable.$_nextHashCode;
-  var $_observers;
-  List $_changes;
-  }
+}
 
 //@ sourceMappingURL=models.dart.map

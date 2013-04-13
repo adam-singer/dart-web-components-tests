@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>observe_nested</title>
+  </head>
+ 
+  <body>
+    <p>
+      <div>
+        Name: <input type="text" bind-value="person.name">
+      </div>
+      <div>
+        City: <input type="text" bind-value="person.address.city">
+      </div>
+    </p>
+    
+    <p>Person's name: {{ person.name }}</p>
+    <p>Person's Address's city: {{ person.address.city }}</p>
+    
+    <script type="application/dart" src="observe_nested.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

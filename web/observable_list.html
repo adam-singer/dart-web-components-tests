@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>observable_list</title>
+  </head>
+ 
+  <body>
+
+    <p>
+      <button on-click="addTimestamp()">Add Timestamp</button>
+      <button on-click="clear()">Clear</button>
+    </p>
+    
+    <ul>
+      <li template repeat="ts in timestamps">{{ ts }}</li>
+    </ul>    
+    
+    <script type="application/dart" src="observable_list.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
