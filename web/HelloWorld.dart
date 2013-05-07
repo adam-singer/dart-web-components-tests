@@ -15,4 +15,6 @@ changeIt() {
   superlative = nextAlternative;
 }
 
+String get foo => superlative;
+
 main() { }

@@ -23,7 +23,8 @@ void main() {
                                   'web/observe_object.html',
                                   'web/observable_list.html',
                                   'web/manual_watching.html',
-                                  'web/observe_nested.html']);
+                                  'web/observe_nested.html',
+                                  'web/select_test.html']);
   
   dwc
     .then((_) => Process.run('cp', ['packages/browser/dart.js', 'web/out/dart.js']))

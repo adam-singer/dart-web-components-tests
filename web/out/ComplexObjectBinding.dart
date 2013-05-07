@@ -5,7 +5,7 @@ import 'package:web_ui/observe/observable.dart' as __observe;
 
 
 @observable
-class Person  extends Observable {
+class Person extends Observable  {
   String __$firstName;
   String get firstName {
     if (__observe.observeReads) {
@@ -52,7 +52,7 @@ class Person  extends Observable {
 }
 
 @observable
-class Address  extends Observable {
+class Address extends Observable  {
   String __$street;
   String get street {
     if (__observe.observeReads) {

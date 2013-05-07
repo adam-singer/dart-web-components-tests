@@ -16,7 +16,7 @@ import 'package:web_ui/web_ui.dart';
 
 final __changes = new __observe.Observable();
 
-String __$msg;
+String __$msg = '';
 String get msg {
   if (__observe.observeReads) {
     __observe.notifyRead(__changes, __observe.ChangeRecord.FIELD, 'msg');
@@ -36,7 +36,7 @@ updateMsg() {
 }
 
 main() {
-  observe(() => msg, (ChangeNotification e) {
+  observeChanges(msg, (List<ChangeRecord> changes) {
     query('#msg').text = msg;
   });
 }

@@ -5,7 +5,7 @@ import 'package:web_ui/observe/observable.dart' as __observe;
 
 
 @observable
-class TodoItem  extends Observable {
+class TodoItem extends Observable  {
   String __$actionItem;
   String get actionItem {
     if (__observe.observeReads) {
